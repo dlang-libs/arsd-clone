@@ -1,12 +1,11 @@
 # arsd-clone
-Modified version of arsd-official which can be build with DMD32 D Compiler v2.077.0 .
+Modified version of arsd-official (by Adam D. Ruppe a.k.a. adamdruppe) which can be build with DMD32 D Compiler v2.077.0 .
 
 ----
 
 This is a collection of modules I find generally useful.
 
-Documentation
-==================
+## Documentation
 
 I know I'm pretty light on this. There's some ddocs but for the most part, I kinda expect you to use it the way I do: hoping things are logical and looking
 at the source to fill in the gaps.
@@ -14,8 +13,7 @@ at the source to fill in the gaps.
 You can always catch me on email though: destructionator@gmail.com. That's
 the most reliable way to reach me.
 
-Basic idea
-===================
+## Basic idea
 
 Modules are usually independent; you don't need this whole directory
 but it doesn't hurt to grab it all either.
@@ -30,8 +28,7 @@ Read more about the modules at these links (docs are still works in process):
 cgi.d info: http://arsdnet.net/web.d/cgi.d.html
 web.d info: http://arsdnet.net/web.d/web.d.html
 
-64 Bit
-=============
+## 64 Bit
 
 Believe it or not, but I still mostly use 32 bit programs myself. I try
 to keep things working on 64 bit, but don't always test it. If something
@@ -43,8 +40,7 @@ get you a fix in about an hour.
 
 Currently included are:
 
-Web related
-================
+## Web related
 
 cgi.d  - base module for making webapps in D. Supports cgi, fastcgi, scgi, and embedded_httpd via -version=xxxx
 dom.d  - an xml/html DOM based on what Javascript provides in browsers
@@ -65,8 +61,7 @@ htmltotext.d - converts html into plain text
 
 rtud.d - a real time update helper for HTML5 EventSource. Kinda buggy.
 
-Database related
-================
+## Database related
 
 database.d  - main interface to databases. Includes DataObject
 mysql.d     - a mysql engine for database.d (most mature of the three). also includes some basic ORM
@@ -75,16 +70,14 @@ sqlite.d    - a sqlite engine for database.d
 mssql.d     - a (super crappy) mssql engine for database.d (uses ODBC)
 querygenerator.d - a user submission for generating sql queries
 
-Desktop app stuff
-================
+## Desktop app stuff
 
 simpledisplay.d - gives quick and easy access to a window for drawing and input. Also has some OpenGL capabilities.
 minigui.d - a small widgetset built on top of simpledisplay.d offering buttons, checkboxes, etc. Almost done!
 terminal.d - quick and easy access to a text mode console/terminal
 htmlwidget.d - a very small html widget, built on simpledisplay.d
 
-Game stuff
-=================
+## Game stuff
 
 engine.d, screen.d, audio.d - a quick wrapper to SDL and OpenGL I used
          in the pre D1 days, now updated so it compiles as both D1 and
@@ -94,20 +87,19 @@ engine.d, screen.d, audio.d - a quick wrapper to SDL and OpenGL I used
 
 	 Eventually I'll redo it.
 
-Reading Common Files
-=================
+## Reading Common Files
+
 bmp.d  - basic .bmp file read/write support
 png.d  - provides some png read/write support
 jpg.d  - just reading jpg header right now
 csv.d  - gives read support to csv files
 
-Cool stuff
-================
+## Cool stuff
+
 jsvar.d - gives a dynamic type in D similar to Javascript's var
 script.d - a little script interpreter whose language is like a hybrid of D and Javascript (builds on jsvar.d)
 
-Other
-================
+## Other
 
 stb_truetype.d - a port of the nice little C library stb_truetype.h to D for drawing text without external dependencies
 
@@ -122,8 +114,8 @@ color.d - a basic color struct and some HSL functions. Also includes really basi
 characterencodings.d - conversion to UTF8 of various encodings
 
 
-Obsolete
-================
+## Obsolete
+
 image.d - now merged into color.d
 lazypng.d - now merged into png.d
 httpd.d - old http server, use cgi.d with -version=embedded_httpd instead
@@ -153,8 +145,7 @@ Thanks go to Nick Sabalausky, Trass3r, Stanislav Blinov, and maartenvd for input
 
 
 
-Newer writeup:
-=================
+## Newer writeup:
 
 
 audio.d, screen.d, engine.d - my old game stuff, wrapping SDL, works in D1 and D2 (or at least did last time I tried it about a year ago). Soon to be replaced by the dependency-free simpledisplay.d, simpleaudio.d, joystick.d combo.
