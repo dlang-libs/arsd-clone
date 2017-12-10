@@ -1,3 +1,8 @@
+# arsd-clone
+Modified version of arsd-official which can be build with DMD32 D Compiler v2.077.0 .
+
+----
+
 This is a collection of modules I find generally useful.
 
 Documentation
